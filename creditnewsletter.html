@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Team Newsletter - All Pages</title>
+    <!-- Use Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .section-separator {
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .dashboard-content {
+            display: none;
+        }
+        .dashboard-content.active {
+            display: block;
+        }
+        .hidden-until-active {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 sm:p-8">
+    <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
+        <!-- Main Header Section -->
+        <header class="bg-[#42db66] text-white p-8 sm:p-12 text-center rounded-b-[4rem]">
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+                <span class="text-[#ff0065]">Credit Team</span> Newsletter
+            </h1>
+            <p class="mt-2 text-xl font-light">alaya News</p>
+            <p class="mt-2 text-lg font-light text-white opacity-80">Q3 2024/25 Edition</p>
+        </header>
+
+        <!-- Dashboard Navigation -->
+        <section class="bg-gray-200 p-4 sm:p-6 text-center rounded-b-xl shadow-md">
+            <nav class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
+                <button data-target="main-dashboard" class="nav-button bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full shadow-lg transition-colors text-sm sm:text-base">
+                    Main Dashboard
+                </button>
+                <button data-target="curtain-dashboard" class="nav-button bg-[#00b0ff] hover:bg-[#0091d3] text-white font-bold py-2 px-6 rounded-full shadow-lg transition-colors text-sm sm:text-base">
+                    Behind the Credit Curtain 📸
+                </button>
+                <button data-target="team-dashboard" class="nav-button bg-[#ff0065] hover:bg-[#d00052] text-white font-bold py-2 px-6 rounded-full shadow-lg transition-colors text-sm sm:text-base">
+                    Meet the Team
+                </button>
+                <button data-target="older-dashboard" class="nav-button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full shadow-lg transition-colors text-sm sm:text-base">
+                    Older Newsletters
+                </button>
+            </nav>
+        </section>
+
+        <!-- Main Dashboard Content -->
+        <div id="main-dashboard" class="dashboard-content p-6 sm:p-8 active">
+            <!-- Settlements Section -->
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Our Settlements So Far</h2>
+            <p class="text-gray-600 mb-6">
+                As of April 2025, our credit team has supported the successful settlement of 1,519 loans, with a total value of $968,536,780.
+            </p>
+            <div class="overflow-x-auto rounded-xl shadow-lg">
+                <table class="min-w-full text-left bg-white">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="px-4 py-3 text-sm font-semibold text-gray-600 uppercase">Broker</th>
+                            <th class="px-4 py-3 text-sm font-semibold text-gray-600 uppercase">Total Settlement</th>
+                            <th class="px-4 py-3 text-sm font-semibold text-gray-600 uppercase">No. of files settled</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 whitespace-nowrap text-gray-800">Prakash Rai</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-gray-800">$91,390,546</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-gray-800">142</td>
+                        </tr>
+                        <tr class="bg-gray-50 hover:bg-gray-100">
+                            <td class="px-4 py-3 whitespace-nowrap text-gray-800">Mohit Lal Pradhan</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-gray-800">$86,665,158</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-gray-800">154</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 whitespace-nowrap text-gray-800">Trong (Vivienne) Than</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-gray-800">$81,829,721</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-gray-800">146</td>
+                        </tr>
+                        <tr class="bg-gray-50 hover:bg-gray-100">
+                            <td class="px-4 py-3 whitespace-nowrap text-gray-800">Jenish Manandhar</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-gray-800">$69,953,434</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-gray-800">117</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 whitespace-nowrap text-gray-800">Romy Dhungana</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-gray-800">$69.242,504</td>
+                            <td class="px-4 py-3 whitespace-nowrap text-gray-800">89</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                <div class="bg-[#42db66] rounded-xl p-4 text-white shadow-md">
+                    <span class="block text-2xl sm:text-3xl font-bold">2778</span>
+                    <span class="block text-sm font-light uppercase">Assessments</span>
+                </div>
+                <div class="bg-[#00b0ff] rounded-xl p-4 text-white shadow-md">
+                    <span class="block text-2xl sm:text-3xl font-bold">2090</span>
+                    <span class="block text-sm font-light uppercase">Prelims</span>
+                </div>
+                <div class="bg-[#ff0065] rounded-xl p-4 text-white shadow-md">
+                    <span class="block text-2xl sm:text-3xl font-bold">1763</span>
+                    <span class="block text-sm font-light uppercase">Submissions</span>
+                </div>
+                <div class="bg-gray-500 rounded-xl p-4 text-white shadow-md">
+                    <span class="block text-2xl sm:text-3xl font-bold">1586</span>
+                    <span class="block text-sm font-light uppercase">Approvals</span>
+                </div>
+            </div>
+
+            <!-- Main Body - Highlights Section -->
+            <section class="p-6 sm:p-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">
+                    <span class="text-[#ff0065]">Credit Team Highlights:</span> Grit, Guts, and Great Outcomes!
+                </h2>
+                <p class="text-gray-600 mb-6">
+                    Our Credit Analysts continue to go above and beyond for clients, solving complex scenarios, pushing through difficult cases, and making a meaningful difference. Here are some powerful wins shared by our team:
+                </p>
+
+                <!-- Silvia -->
+                <div id="silvia-story" class="story-card mb-8 p-6 bg-blue-50 rounded-xl shadow-lg relative">
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#00b0ff] mb-2">Silvia: Super Strategy & Leave Win</h3>
+                    <p class="text-gray-700">
+                        AMP approval despite income complexity: Clients relied on rental and super income. Silvia leveraged Income Protection Payments and managed a tricky structure where AMP wouldn't accept OOP as security, so the equity was used to purchase OOP fully. The deal settled smoothly, and the clients were delighted.
+                        <br><br>
+                        Land loan success during bereavement leave: The client was on bereavement leave but had cleverly aligned Centrelink and annual leaves. Despite back-and-forth and near-loss of hope, Silvia pushed through and got the land loan settled.
+                    </p>
+                    <p class="mt-4 italic text-gray-500">
+                        <span class="font-bold text-[#00b0ff]">Learning:</span> Creative structuring and emotional intelligence go a long way in tough deals.
+                    </p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <button class="like-btn text-gray-500 hover:text-red-500 transition-colors" data-story-id="silvia">
+                            <span class="text-2xl">❤️</span>
+                        </button>
+                        <span class="like-count font-semibold text-gray-700" id="silvia-likes">0</span>
+                    </div>
+                </div>
+
+                <!-- Aishwarya -->
+                <div id="aishwarya-story" class="story-card mb-8 p-6 bg-green-50 rounded-xl shadow-lg relative">
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#42db66] mb-2">Aishwarya: Compassion in Action</h3>
+                    <p class="text-gray-700">
+                        Client's emotional refinance journey: A long-term client, recently widowed, struggled with repayments. Despite poor credit, Aishwarya and Team Amine fought to retain the loan with AMP. With sensitivity and transparency, they consolidated debts, secured a competitive rate, and gave Rohit much-needed financial relief. He was deeply grateful—a story of compassion and commitment.
+                    </p>
+                    <p class="mt-4 italic text-gray-500">
+                        <span class="font-bold text-[#42db66]">Learning:</span> Emotional intelligence is as important as credit skill in building trust with vulnerable clients.
+                    </p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <button class="like-btn text-gray-500 hover:text-red-500 transition-colors" data-story-id="aishwarya">
+                            <span class="text-2xl">❤️</span>
+                        </button>
+                        <span class="like-count font-semibold text-gray-700" id="aishwarya-likes">0</span>
+                    </div>
+                </div>
+
+                <!-- Suraj -->
+                <div id="suraj-story" class="story-card mb-8 p-6 bg-red-50 rounded-xl shadow-lg relative">
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#ff0065] mb-2">Suraj: Crypto Crisis Averted</h3>
+                    <p class="text-gray-700">
+                        Crypto recovery rescue: A client facing financial ruin due to crypto losses had one repayment left before default. Suraj structured a low-doc solution by extending the term and using equity. Multiple Live Chats, consistent follow-ups, and a creative structure saved the client's home.
+                    </p>
+                    <p class="mt-4 italic text-gray-500">
+                        <span class="font-bold text-[#ff0065]">Learning:</span> Fast thinking and flexibility with product structures can save the day.
+                    </p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <button class="like-btn text-gray-500 hover:text-red-500 transition-colors" data-story-id="suraj">
+                            <span class="text-2xl">❤️</span>
+                        </button>
+                        <span class="like-count font-semibold text-gray-700" id="suraj-likes">0</span>
+                    </div>
+                </div>
+
+                <!-- Sejal -->
+                <div id="sejal-story" class="story-card mb-8 p-6 bg-blue-50 rounded-xl shadow-lg relative">
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#00b0ff] mb-2">Sejal: Calm, Reliable, and Consistently Excellent</h3>
+                    <p class="text-gray-700">
+                        Handling complex files during a period of major team transitions is no easy feat—but Sejal has done just that with unwavering quality and professionalism. She has navigated tricky scenarios with clarity, taken full ownership of outcomes, and maintained the highest standards throughout. One recent deal had several unexpected changes, but Sejal calmly managed each twist, earning glowing feedback from a very happy client.
+                    </p>
+                    <p class="mt-4 italic text-gray-500">
+                        <span class="font-bold text-[#00b0ff]">Learning:</span> True excellence shows in how we handle pressure and Sejal continues to raise the bar with grace and consistency.
+                    </p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <button class="like-btn text-gray-500 hover:text-red-500 transition-colors" data-story-id="sejal">
+                            <span class="text-2xl">❤️</span>
+                        </button>
+                        <span class="like-count font-semibold text-gray-700" id="sejal-likes">0</span>
+                    </div>
+                </div>
+
+                <!-- More stories like the above for each person... -->
+                <div id="urusha-story" class="story-card p-6 bg-green-50 rounded-xl shadow-lg mb-8 relative">
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#42db66] mb-2">Urusha: Score Play Pays Off</h3>
+                    <p class="text-gray-700">
+                        Credit score challenge solved: A client's Equifax score showed as 575, but the comprehensive score was 604. Urusha verified with AOL (which showed 815) and confidently submitted to Westpac, knowing they prioritize the comprehensive score. The deal sailed through without issue.
+                    </p>
+                    <p class="mt-4 italic text-gray-500">
+                        <span class="font-bold text-[#42db66]">Learning:</span> Understanding lender preferences around credit scores can be the key to success.
+                    </p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <button class="like-btn text-gray-500 hover:text-red-500 transition-colors" data-story-id="urusha">
+                            <span class="text-2xl">❤️</span>
+                        </button>
+                        <span class="like-count font-semibold text-gray-700" id="urusha-likes">0</span>
+                    </div>
+                </div>
+
+                <!-- Rabin -->
+                <div id="rabin-story" class="story-card p-6 bg-red-50 rounded-xl shadow-lg mb-8 relative">
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#ff0065] mb-2">Rabin: Payday Cleanup Hero</h3>
+                    <p class="text-gray-700">
+                        Breaking the payday loan cycle: A client was drowning in payday loans and at risk of losing their name. After multiple lender rejections and hardship complications, Rabin found a solution with VMG that required just one full mortgage repayment—no hardship exit needed. The deal settled, debts consolidated, and the client's monthly cash flow improved by $1800. A truly life-changing result.
+                    </p>
+                    <p class="mt-4 italic text-gray-500">
+                        <span class="font-bold text-[#ff0065]">Learning:</span> Even the most complex hardship cases can be turned around with a strong lender match.
+                    </p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <button class="like-btn text-gray-500 hover:text-red-500 transition-colors" data-story-id="rabin">
+                            <span class="text-2xl">❤️</span>
+                        </button>
+                        <span class="like-count font-semibold text-gray-700" id="rabin-likes">0</span>
+                    </div>
+                </div>
+
+                <!-- Rojina -->
+                <div id="rojina-story" class="story-card p-6 bg-blue-50 rounded-xl shadow-lg relative">
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#00b0ff] mb-2">Rojina: RSU Relay Victory</h3>
+                    <p class="text-gray-700">
+                        RSU exception triumph: The client had no RSU income in 2023. After multiple exceptions with Macquarie, extensive follow-ups from Jan to Feb 2025, and policy changes mid-way, Rojina recalculated RSU income three times. She secured two RSU exceptions and a pre-approval despite missed documents—a huge win after months of persistence.
+                    </p>
+                    <p class="mt-4 italic text-gray-500">
+                        <span class="font-bold text-[#00b0ff]">Learning:</span> Persistence and policy mastery make the difference in exception-heavy files.
+                    </p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <button class="like-btn text-gray-500 hover:text-red-500 transition-colors" data-story-id="rojina">
+                            <span class="text-2xl">❤️</span>
+                        </button>
+                        <span class="like-count font-semibold text-gray-700" id="rojina-likes">0</span>
+                    </div>
+                </div>
+
+                <!-- Elisha -->
+                <div id="elisha-story" class="story-card p-6 bg-green-50 rounded-xl shadow-lg relative">
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#42db66] mb-2">Elisha: RSU Magic</h3>
+                    <p class="text-gray-700">
+                        PCCU one-shot approval: A quick and clean submission that got approved on the first go—efficiency at its best!
+                        <br><br>
+                        RSU win: Finsit RSU income loan formally approved with Bankwest! Elisha reached out to higher credit for exception approval. The deal involved a refinance, equity release, and a pre-approval for investment, using a combination of salary RSU income bonus.
+                    </p>
+                    <p class="mt-4 italic text-gray-500">
+                        <span class="font-bold text-[#42db66]">Learning:</span> Don't hesitate to escalate—proactive exception requests can secure big wins.
+                    </p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <button class="like-btn text-gray-500 hover:text-red-500 transition-colors" data-story-id="elisha">
+                            <span class="text-2xl">❤️</span>
+                        </button>
+                        <span class="like-count font-semibold text-gray-700" id="elisha-likes">0</span>
+                    </div>
+                </div>
+
+                <!-- Gunjan -->
+                <div id="gunjan-story" class="story-card p-6 bg-red-50 rounded-xl shadow-lg relative">
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#ff0065] mb-2">Gunjan: SMSF Trust Masterclass</h3>
+                    <p class="text-gray-700">
+                        SMSF loan approved through creative servicing: Got SMSF deal settled using recent payslip contributions even though it didn't meet the 12 month rule. Also supported a complex investment purchase under trust with expat guarantor, tweaking LODs to meet the client's legal needs—one-shot approval.
+                    </p>
+                    <p class="mt-4 italic text-gray-500">
+                        <span class="font-bold text-[#ff0065]">Learning:</span> A deep grasp of servicing policies helps bend the rules ethically and effectively.
+                    </p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <button class="like-btn text-gray-500 hover:text-red-500 transition-colors" data-story-id="gunjan">
+                            <span class="text-2xl">❤️</span>
+                        </button>
+                        <span class="like-count font-semibold text-gray-700" id="gunjan-likes">0</span>
+                    </div>
+                </div>
+
+                <!-- Sulav -->
+                <div id="sulav-story" class="story-card p-6 bg-blue-50 rounded-xl shadow-lg relative">
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#00b0ff] mb-2">Sulav: FHBG Win Under Pressure</h3>
+                    <p class="text-gray-700">
+                        First Home Buyer FHBG deal with tight servicing: Navigated limited savings, ATO repayment adjustment, and NAB-only eligibility. The client secured approval and settled the property. Strong use of rent as genuine savings and problem-solving under pressure.
+                    </p>
+                    <p class="mt-4 italic text-gray-500">
+                        <span class="font-bold text-[#00b0ff]">Learning:</span> Great results come from smart structuring and knowing exactly which lender fits the scenario best.
+                    </p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <button class="like-btn text-gray-500 hover:text-red-500 transition-colors" data-story-id="sulav">
+                            <span class="text-2xl">❤️</span>
+                        </button>
+                        <span class="like-count font-semibold text-gray-700" id="sulav-likes">0</span>
+                    </div>
+                </div>
+
+                <!-- Nikita -->
+                <div id="nikita-story" class="story-card p-6 bg-green-50 rounded-xl shadow-lg relative">
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#42db66] mb-2">Nikita: The Natural - Early Win, Big Impact</h3>
+                    <p class="text-gray-700">
+                        On just her third file, Nikita handled a high-pressure FHBG deal involving credit score issues, limited savings, and complex background details. She managed everything end-to-end, leading to a formal approval just three days after submission.
+                    </p>
+                    <p class="mt-4 italic text-gray-500">
+                        <span class="font-bold text-[#42db66]">Learning:</span> Confidence and ownership, even early on, can drive fast, successful outcomes.
+                    </p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <button class="like-btn text-gray-500 hover:text-red-500 transition-colors" data-story-id="nikita">
+                            <span class="text-2xl">❤️</span>
+                        </button>
+                        <span class="like-count font-semibold text-gray-700" id="nikita-likes">0</span>
+                    </div>
+                </div>
+            
+                <!-- Shradha -->
+                <div id="shradha-story" class="story-card p-6 bg-red-50 rounded-xl shadow-lg relative">
+                    <h3 class="text-xl sm:text-2xl font-bold text-[#ff0065] mb-2">Shradha: The Challenger and Change-Maker</h3>
+                    <p class="text-gray-700">
+                        On top of supporting her team, Shradha has consistently demonstrated initiative by speaking up and challenging the status quo—a quality we deeply value. Her feedback throughout the year has led to tangible improvements, including changes within the TLH team and contributions to the ongoing salary and non-compete discussions. She also built a custom GPT tool—a refinance cost-benefit analyzer—showing how credit knowledge and tech can combine to improve decision-making.
+                    </p>
+                    <p class="mt-4 italic text-gray-500">
+                        <span class="font-bold text-[#ff0065]">Learning:</span> Speaking up drives progress, combining voice with vision makes real change happen.
+                    </p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <button class="like-btn text-gray-500 hover:text-red-500 transition-colors" data-story-id="shradha">
+                            <span class="text-2xl">❤️</span>
+                        </button>
+                        <span class="like-count font-semibold text-gray-700" id="shradha-likes">0</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Birthday Corner Section -->
+            <section class="p-6 sm:p-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">Birthday Corner 🎉</h2>
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg text-center">
+                    <p class="text-lg text-gray-700 font-semibold mb-2">Upcoming Birthdays</p>
+                    <p class="text-gray-500 italic">This section will be updated with all our team's upcoming birthdays!</p>
+                </div>
+            </section>
+        
+            <!-- Rising Talent Section -->
+            <section class="p-6 sm:p-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Rising Talent, Steady Hands: New Stars and General Team Support</h3>
+                <p class="text-gray-700 mb-4">
+                    Our relatively new Credit Analysts are already making their mark. Sadina is quickly catching up with speed and delivering value to her broker team. She's secured approvals on complex foreign self-employed deals and even achieved a few one-shot approvals—a big milestone early on. Both Dikshyas have been consistent, confidently handling complex deals on their own, showing maturity and technical growth. The newest batch is also settling in fast and learning the ropes like pros. Shoutout to Smriti, Kristi, Anish, Elisha, Praish, and Pranisha—your curiosity and adaptability are commendable! And none of this would be possible without the support of the general credit team. Huge appreciation to everyone especially Prajwal and Sulav for handling workloads, supporting dedicated teams in need, coaching, guiding, and being strong anchors for the newcomers.
+                </p>
+            </section>
+
+            <footer class="text-center mt-12 pt-6 border-t-2 border-dashed border-gray-300">
+                <p class="text-lg font-semibold text-gray-700">
+                    These wins reflect the talent, heart, and resilience of our amazing Credit Analyst team. These stories show how we're not just processing loans, we're changing lives.
+                </p>
+                <p class="text-gray-500 mt-2">
+                    Thanks to every Credit Analyst for your resilience, creativity, and heart. Let's keep pushing boundaries!
+                </p>
+            </footer>
+        </div>
+
+        <!-- Behind the Credit Curtain Dashboard Content -->
+        <div id="curtain-dashboard" class="dashboard-content hidden-until-active">
+            <header class="bg-[#00b0ff] text-white p-8 sm:p-12 text-center rounded-b-[4rem]">
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+                    Behind the Credit Curtain 📸
+                </h1>
+                <p class="mt-2 text-xl font-light">
+                    A look at the people behind the numbers!
+                </p>
+            </header>
+            <section class="p-6 sm:p-8">
+                <div class="flex flex-col items-center text-center mb-8">
+                    <img src="https://googleusercontent.com/file_content/1" alt="Team Christmas tree" class="rounded-2xl w-full max-w-xl object-cover mb-2 shadow-lg">
+                    <p class="font-semibold text-gray-700 mt-2">Team Christmas Tree</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Meet the Team Dashboard Content -->
+        <div id="team-dashboard" class="dashboard-content hidden-until-active">
+            <header class="bg-[#ff0065] text-white p-8 sm:p-12 text-center rounded-b-[4rem]">
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+                    Meet the Team
+                </h1>
+                <p class="mt-2 text-xl font-light">
+                    All of our amazing Credit Analysts and their cool leaders!
+                </p>
+            </header>
+            <section class="p-6 sm:p-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">Leaders Board</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-10">
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Binay" alt="Binay Lama Pakhrin" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Binay Lama Pakhrin</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Babin" alt="Babin Joshi" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Babin Joshi</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Aman" alt="Aman Shakya" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Aman Shakya</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Safal" alt="Safal Das Shrestha" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Safal Das Shrestha</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Sameer" alt="Sameer Bhatt" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Sameer Bhatt</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                </div>
+            </section>
+            <section class="p-6 sm:p-8" id="team-list">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">Awesome Team Credit Analysts</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Biraj" alt="Biraj Shrestha" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Biraj Shrestha</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Silvia" alt="Silvia Sapkota" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Silvia Sapkota</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Sahil" alt="Sahil Awale" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Sahil Awale</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Samip" alt="Samip Shrestha" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Samip Shrestha</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Kristi" alt="Kristi Gauchan" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Kristi Gauchan</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Bibesh" alt="Bibesh Kumar Pokhrel" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Bibesh Kumar Pokhrel</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Sanju" alt="Sanju Kafle" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Sanju Kafle</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Jeshan" alt="Jeshan Maharjan" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Jeshan Maharjan</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Reshna" alt="Reshna Shrestha" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Reshna Shrestha</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Ishan" alt="Ishan Maharjan" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Ishan Maharjan</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Elisha" alt="Elisha Thapa" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Elisha Thapa</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Saakshi" alt="Saakshi Dhakal" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Saakshi Dhakal</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Rachana" alt="Rachana Basnet" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Rachana Basnet</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Susrika" alt="Susrika Ghimire" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Susrika Ghimire</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Deepasha" alt="Deepasha Subedi" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Deepasha Subedi</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Dikshya" alt="Dikshya Sharma" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Dikshya Sharma</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Elisha" alt="Elisha Kandel" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Elisha Kandel</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Rashila" alt="Rashila Shahi" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Rashila Shahi</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Sunil" alt="Sunil Shrestha" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Sunil Shrestha</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Dikshya" alt="Dikshya Maharjan" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Dikshya Maharjan</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Praish" alt="Praish Chitrakar" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Praish Chitrakar</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Nancy" alt="Nancy Khadgi" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Nancy Khadgi</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Sadina" alt="Sadina Jhyari Magar" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Sadina Jhyari Magar</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Suraj" alt="Suraj Ranjitkar" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Suraj Ranjitkar</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Sajal" alt="Sajal Khadka" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Sajal Khadka</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Smriti" alt="Smriti Kuikel" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Smriti Kuikel</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Shailendra" alt="Shailendra Chhetri" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Shailendra Chhetri</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Sunita" alt="Sunita Tandukar" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Sunita Tandukar</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Shreya" alt="Shreya Shrestha" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Shreya Shrestha</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Nilam" alt="Nilam Gurung" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Nilam Gurung</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Emila" alt="Emila Joshi" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Emila Joshi</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Gunjan" alt="Gunjan Shree Thapa" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Gunjan Shree Thapa</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Chhayan" alt="Chhayan Maharjan" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Chhayan Maharjan</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Archana" alt="Archana Upreti" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Archana Upreti</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Urusha" alt="Urusha Khadgi" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Urusha Khadgi</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Ritiz" alt="Ritiz Ghimire" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Ritiz Ghimire</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Arakshan" alt="Arakshan Rijal" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Arakshan Rijal</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Hari" alt="Hari Bhakta Dhital" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Hari Bhakta Dhital</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Aishwarya" alt="Aishwarya Shrestha" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Aishwarya Shrestha</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Rabin" alt="Rabin Rai" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Rabin Rai</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Shreeya" alt="Shreeya Tuladhar" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Shreeya Tuladhar</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Sujil" alt="Sujil Shakya" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Sujil Shakya</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Deepika" alt="Deepika (Deps) Shakya" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Deepika (Deps) Shakya</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Rojina" alt="Rojina Neupane" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Rojina Neupane</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Pranita" alt="Pranita KC" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Pranita KC</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Prajwal" alt="Prajwal Aryal" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Prajwal Aryal</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Anish" alt="Anish Kayastha" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Anish Kayastha</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Shradha" alt="Shradha (Skye) Jha" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Shradha (Skye) Jha</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Nikita" alt="Nikita Dangol" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Nikita Dangol</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Pramesh" alt="Pramesh Shrestha" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Pramesh Shrestha</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Sejal" alt="Sejal Rawal" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Sejal Rawal</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Rishab" alt="Rishab Shrestha" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Rishab Shrestha</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Umedh" alt="Umedh Shakya" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Umedh Shakya</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Mahan" alt="Mahan Adhikari" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Mahan Adhikari</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Srijan" alt="Srijan Joshi" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Srijan Joshi</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Sabeena" alt="Sabeena Pandey" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Sabeena Pandey</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Yumi" alt="Yumi Shrestha" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Yumi Shrestha</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Nishta" alt="Nishta Dhami" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Nishta Dhami</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Bindu" alt="Bindu Gaire Sharma" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Bindu Gaire Sharma</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/00b0ff/ffffff?text=Ujjwal" alt="Ujjwal Chaudhary" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Ujjwal Chaudhary</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/ff0065/ffffff?text=Suvekshya" alt="Suvekshya Maharjan" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Suvekshya Maharjan</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/200x200/42db66/ffffff?text=Pooja" alt="Pooja Neupane" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2 shadow-lg">
+                        <p class="font-semibold text-gray-700">Pooja Neupane</p>
+                        <p class="text-sm text-gray-500 mt-1">Birthday: [Date]</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Older Newsletters Dashboard Content -->
+        <div id="older-dashboard" class="dashboard-content hidden-until-active">
+            <header class="bg-[#42db66] text-white p-8 sm:p-12 text-center rounded-b-[4rem]">
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+                    Older Newsletters
+                </h1>
+                <p class="mt-2 text-xl font-light">
+                    Archive of past editions.
+                </p>
+            </header>
+            <section class="p-6 sm:p-8 text-center">
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg">
+                    <p class="text-lg text-gray-700 font-semibold mb-2">
+                        Future content will be added here!
+                    </p>
+                    <p class="text-gray-500 italic">
+                        You can add links to your past newsletters as separate HTML files.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <!-- JavaScript for interactive features -->
+    <script>
+        // --- DATA AND DOM ELEMENTS ---
+        const navButtons = document.querySelectorAll('.nav-button');
+        const dashboardContents = document.querySelectorAll('.dashboard-content');
+        const likeButtons = document.querySelectorAll('.like-btn');
+        const likeCounts = document.querySelectorAll('.like-count');
+
+        // --- FUNCTIONS ---
+        // Function to show the active dashboard and hide others
+        const showDashboard = (targetId) => {
+            dashboardContents.forEach(content => {
+                content.classList.remove('active');
+                if (content.id === targetId) {
+                    content.classList.add('active');
+                }
+            });
+        };
+
+        // Function to load like counts from localStorage
+        const loadLikes = () => {
+            likeCounts.forEach(countEl => {
+                const storyId = countEl.id.replace('-likes', '');
+                const storedLikes = localStorage.getItem(`likes-${storyId}`);
+                if (storedLikes) {
+                    countEl.textContent = storedLikes;
+                }
+            });
+        };
+
+        // Function to handle a like click
+        const handleLikeClick = (e) => {
+            const button = e.currentTarget;
+            const storyId = button.dataset.storyId;
+            const countEl = document.getElementById(`${storyId}-likes`);
+            
+            // Get current count, increment, and update UI
+            let currentLikes = parseInt(countEl.textContent, 10);
+            currentLikes++;
+            countEl.textContent = currentLikes;
+
+            // Save the updated count to localStorage
+            localStorage.setItem(`likes-${storyId}`, currentLikes);
+        };
+
+        // --- EVENT LISTENERS ---
+        navButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                const targetId = e.currentTarget.dataset.target;
+                showDashboard(targetId);
+            });
+        });
+
+        likeButtons.forEach(button => {
+            button.addEventListener('click', handleLikeClick);
+        });
+
+        // --- INITIALIZATION ---
+        window.onload = () => {
+            loadLikes();
+        };
+    </script>
+</body>
+</html>
